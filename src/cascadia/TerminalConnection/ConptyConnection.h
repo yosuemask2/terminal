@@ -38,6 +38,7 @@ namespace winrt::Microsoft::Terminal::TerminalConnection::implementation
         void ClearBuffer();
 
         winrt::guid Guid() const noexcept;
+        winrt::hstring Commandline() const noexcept;
 
         static void StartInboundListener();
         static void StopInboundListener();
